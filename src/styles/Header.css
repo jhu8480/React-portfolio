@@ -15,11 +15,11 @@
   cursor: pointer;
   border: none;
   background-color: transparent;
-  color: var(--color-brand--2);
+  color: var(--color-brand--1);
   font-weight: 200;
 }
 
 .navbar button.active {
   padding-bottom: 3.5px;
-  border-bottom: 1px solid var(--color-brand--2);
+  border-bottom: 1px solid var(--color-brand--1);
 }

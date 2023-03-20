@@ -19,5 +19,14 @@
 }
 
 body {
-  background-color: var(--color-dark--2);
+  background-color: var(--color-light--3);
+}
+
+.container {
+  height: 80vh;
+  width: 100vw;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
