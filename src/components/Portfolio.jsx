@@ -4,6 +4,7 @@ import Projects from './Projects';
 import Contact from './Contact';
 import Resume from './Resume';
 import Header from './Header';
+import Footer from './Footer';
 
 function Portfolio() {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -28,6 +29,7 @@ function Portfolio() {
     <>
       <Header currentPage={currentPage} handlePageChange={handlePageChange}/>
       {renderPage()}
+      <Footer />
     </>
   )
 }
