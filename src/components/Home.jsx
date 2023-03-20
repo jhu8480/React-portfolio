@@ -6,7 +6,7 @@ function Home() {
     <div className='container'>
       <div className='home-container'>
         <h1 className='greeting'>Hi! My name is Jinhui</h1>
-        <p>I'm a <b>web developer</b> looking for an entry-level web dev job in Toronto, ON</p>
+        <p>I'm a <b>web developer</b> looking for a full-time entry-level web dev job in Toronto, ON. I started learning web development since October 2022. Before the career transition, I had worked in a manufacuring company for 6 years as a technical sales specialist.</p>
         <div className='skills'>
           <div className='list'>
             <h2>Front end skills</h2>
