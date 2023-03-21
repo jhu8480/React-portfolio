@@ -14,8 +14,6 @@ function Projects() {
         <div className='project'></div>
         <div className='project'></div>
         <div className='project'></div>
-        <div className='project'></div>
-        <div className='project'></div>
       </div>
     </div>
   )
