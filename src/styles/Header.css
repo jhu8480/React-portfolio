@@ -17,9 +17,20 @@
   background-color: transparent;
   color: var(--color-brand--1);
   font-weight: 200;
+  transition: 0.3s;
+}
+
+.navbar button:hover {
+  color: var(--color-brand--2);
 }
 
 .navbar button.active {
   padding-bottom: 3.5px;
   border-bottom: 1px solid var(--color-brand--1);
+  transition: 0.3s;
+}
+
+.navbar button.active:hover {
+  color: var(--color-brand--2);
+  border-bottom: 1px solid var(--color-brand--2);
 }

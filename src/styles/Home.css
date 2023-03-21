@@ -23,6 +23,10 @@
   100% {transform: translate(0px);}
 }
 
+.introduction {
+  max-width: 600px;
+}
+
 .home-container p {
   color: var(--color-dark--1);
   font-weight: 300;
