@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import '../styles/Contact.css';
 import { validateEmail } from '../utils/helpers';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faEnvelope, faLocationDot} from '@fortawesome/free-solid-svg-icons'
 
 function Contact() {
   const [username, setUserName] = useState('');
@@ -50,13 +52,18 @@ function Contact() {
     <div className='container'>
       <div className="contact-container">
         <h2>Contact</h2>
+        <div className="contact-info">
+          <p><FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon> Scarborough, ON</p>
+          <p><FontAwesomeIcon icon={faPhone}></FontAwesomeIcon> 437-299-8480</p>
+          <p><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon> jhu8480@gmail.com</p>
+        </div>
         <form>
           <p>Name</p>
           <input type="text" name="username" placeholder='name' onChange={handleInputChange} onFocus={() => setErrorMessage('')} onBlur={handleBlur}/>
           <p>Email</p>
           <input type="email" name="email" placeholder='email' onChange={handleInputChange} onFocus={() => setErrorMessage('')} onBlur={handleBlur}/>
           <p>Message</p>
-          <textarea cols="30" rows="10" placeholder='enter a message here...' onChange={handleInputChange} onFocus={() => setErrorMessage('')} onBlur={handleBlur}></textarea><br />
+          <textarea cols="30" rows="5" placeholder='enter a message here...' onChange={handleInputChange} onFocus={() => setErrorMessage('')} onBlur={handleBlur}></textarea><br />
           <button onClick={handleFormSubmit}>Submit</button>
         </form>
         {errorMessage ? 
