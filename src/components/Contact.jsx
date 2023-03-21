@@ -64,7 +64,7 @@ function Contact() {
           <input type="email" name="email" placeholder='email' onChange={handleInputChange} onFocus={() => setErrorMessage('')} onBlur={handleBlur}/>
           <p>Message</p>
           <textarea cols="30" rows="5" placeholder='enter a message here...' onChange={handleInputChange} onFocus={() => setErrorMessage('')} onBlur={handleBlur}></textarea><br />
-          <button onClick={handleFormSubmit}>Submit</button>
+          <button onClick={handleFormSubmit}>Send a message</button>
         </form>
         {errorMessage ? 
         <div>

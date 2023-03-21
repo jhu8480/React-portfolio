@@ -1,0 +1,41 @@
+.projects-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.project {
+  width: 200px;
+  border-radius: 10px;
+  background-color: rgba(66, 72, 77, 0.5);
+  flex: 1 1 100px;
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project a {
+  color: transparent;
+  text-decoration: none;
+}
+
+.project:hover {
+  flex-grow: 50;
+}
+
+.project:hover a{
+  font-size: 2rem;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.project-1 {
+  background-image: url('./../images/blog-image.jpg');
+  background-size: cover;
+}
