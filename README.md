@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# React Portfolio Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a single-page React app that showcases Jinhui Hu's portfolio. It consists of four main components: Home, Projects, Contact, and Resume.
 
-## Available Scripts
+## Home
 
-In the project directory, you can run:
+The Home component displays a brief introduction of Jinhui Hu and provides links to the other sections of the portfolio.
 
-### `npm start`
+## Projects
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The Projects component showcases some of Jinhui Hu's notable projects. Each project is displayed with a thumbnail image and a short description.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Contact
 
-### `npm test`
+The Contact component provides a form for visitors to send a message to Jinhui Hu. Visitors can enter their name, email address, and message.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Resume
 
-### `npm run build`
+The Resume component displays Jinhui Hu's resume and provides a link to download the file.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To download the resume, simply click on the "Download" button.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This app can be deployed to Github Pages or any other static hosting service. To deploy the app to Github Pages, follow these steps:
 
-### `npm run eject`
+In the project directory, run npm run build to build the app for production.
+Create a new repository on Github and push the code to the repository.
+Go to the repository's Settings page and scroll down to the "Github Pages" section.
+Choose the "main" branch as the source and select the root folder as the publishing source.
+Click "Save" and wait for a few minutes for the changes to take effect.
+The app will now be live at the Github Pages URL.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Technologies Used
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+React
+HTML/CSS
+JavaScript
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Credits
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This app was created by Jinhui Hu.
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License
