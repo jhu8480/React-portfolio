@@ -2,6 +2,9 @@
 
 This is a single-page React app that showcases Jinhui Hu's portfolio. It consists of four main components: Home, Projects, Contact, and Resume.
 
+## Link to deployed page
+https://jhu8480.github.io/React-portfolio/
+
 ## Home
 
 The Home component displays a brief introduction of Jinhui Hu and provides links to the other sections of the portfolio.
