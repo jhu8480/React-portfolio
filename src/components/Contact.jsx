@@ -16,6 +16,11 @@ function Contact() {
     const inputValue = target.value;
 
     if (inputType === 'email') {
+      if(!validateEmail(email)) {
+        setErrorMessage('Invalid Email');
+      } else {
+        setErrorMessage('');
+      }
       setEmail(inputValue);
     } else if (inputType === 'username') {
       setUserName(inputValue);
@@ -33,6 +38,16 @@ function Contact() {
     }
   }
 
+  const handleFocus = () => {
+    if(!validateEmail(email)) {
+      setErrorMessage('Invalid Email');
+      return;
+    } else if (!username || !message) {
+      setErrorMessage('Please complete the form');
+    }
+    setErrorMessage('');
+  }
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
     
@@ -45,7 +60,7 @@ function Contact() {
       username,
       email,
       message
-    })
+    });
   }
 
   return (
@@ -59,11 +74,11 @@ function Contact() {
         </div>
         <form>
           <p>Name</p>
-          <input type="text" name="username" placeholder='name' onChange={handleInputChange} onFocus={() => setErrorMessage('')} onBlur={handleBlur}/>
+          <input type="text" name="username" placeholder='name' onChange={handleInputChange} onFocus={handleFocus} onBlur={handleBlur}/>
           <p>Email</p>
-          <input type="email" name="email" placeholder='email' onChange={handleInputChange} onFocus={() => setErrorMessage('')} onBlur={handleBlur}/>
+          <input type="email" name="email" placeholder='email' onChange={handleInputChange} onFocus={handleFocus} onBlur={handleBlur}/>
           <p>Message</p>
-          <textarea cols="30" rows="5" placeholder='enter a message here...' onChange={handleInputChange} onFocus={() => setErrorMessage('')} onBlur={handleBlur}></textarea><br />
+          <textarea cols="30" rows="5" placeholder='enter a message here...' onChange={handleInputChange} onFocus={handleFocus} onBlur={handleBlur}></textarea><br />
           <button onClick={handleFormSubmit}>Send a message</button>
         </form>
         {errorMessage ? 

@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
 
 function Resume() {
+
+
+
   return (
-    <div className='container'>Resume</div>
+    <div className='container'>
+    </div>
   )
 }
 

@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 function Projects() {
+
   return (
     <div className='container'>
       <div className='projects-container'>
