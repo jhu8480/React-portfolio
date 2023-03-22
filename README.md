@@ -18,7 +18,7 @@ The Contact component provides a form for visitors to send a message to Jinhui H
 
 The Resume component displays Jinhui Hu's resume and provides a link to download the file.
 
-To download the resume, simply click on the "Download" button.
+To download the resume, simply click on the "Download my resume" button.
 
 ## Deployment
 
